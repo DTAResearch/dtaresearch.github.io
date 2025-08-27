@@ -64,7 +64,31 @@ export default function SanPham() {
                 </Link>
               </div>
             </motion.div>
-            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div className="p-4 bg-blue-600">
+                <Image
+                  src="/images/thaydiachi.png"
+                  alt="Learn Management System"
+                  width={600}
+                  height={300}
+                  className="w-full h-48 object-cover rounded"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-2">Chuyển đổi Địa danh Hành chính</h2>
+                <p className="text-gray-600 mb-4">
+                  Hệ thống tự động chuẩn hóa và cập nhật địa chỉ theo đơn vị hành chính mới.
+                </p>
+                <Link href="https://thaydiachi.com/" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors">
+                  Tìm hiểu thêm
+                </Link>
+              </div>
+            </motion.div>
             {/* Product 2 */}
             {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
